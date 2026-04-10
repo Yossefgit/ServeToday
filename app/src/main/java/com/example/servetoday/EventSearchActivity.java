@@ -1,11 +1,11 @@
 package com.example.servetoday;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,7 +31,7 @@ public class EventSearchActivity extends AppCompatActivity {
             return insets;
         });
 
-        TextView buttonBack = findViewById(R.id.buttonBack);
+        ImageButton buttonBack = findViewById(R.id.buttonBack);
         editTextZipCode = findViewById(R.id.editTextZipCode);
         calendarView = findViewById(R.id.calendarView);
         Button buttonSubmitSearch = findViewById(R.id.buttonSubmitSearch);
@@ -59,11 +59,10 @@ public class EventSearchActivity extends AppCompatActivity {
                 return;
             }
 
-            Toast.makeText(
-                    EventSearchActivity.this,
-                    "Searching events for " + zipCode + " on " + selectedDate,
-                    Toast.LENGTH_SHORT
-            ).show();
+            Intent intent = new Intent(EventSearchActivity.this, EventListActivity.class);
+            intent.putExtra("zipCode", zipCode);
+            intent.putExtra("selectedDate", selectedDate);
+            startActivity(intent);
         });
     }
 }

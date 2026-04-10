@@ -64,7 +64,7 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:lineSpacingExtra="6dp"
-                android:text="Our mission is to help people find local volunteer events in their community. Search by zip code, explore opportunities nearby, and make a meaningful impact."
+                android:text="Create your account to start discovering volunteer opportunities in your local community, choose a shift, and track your service impact."
                 android:textColor="#4E4E4E"
                 android:textSize="17sp" />
 
@@ -74,18 +74,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Find an event. Sign up. Serve your community."
+                android:text="Create an account. Find an event. Serve your community."
                 android:textColor="#7A5DB0"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/buttonShowEvents"
+                android:id="@+id/buttonCreateAccount"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="36dp"
                 android:backgroundTint="#7E57C2"
-                android:text="Show Events"
+                android:text="Create Account"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"

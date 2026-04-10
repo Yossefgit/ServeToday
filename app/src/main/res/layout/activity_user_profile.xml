@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/eventSearchRoot"
+    android:id="@+id/userProfileRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F7F4FF"
-    tools:context=".EventSearchActivity">
+    tools:context=".UserProfileActivity">
 
     <ScrollView
         android:layout_width="0dp"
@@ -33,7 +33,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/buttonBack"
+                    android:id="@+id/buttonBackProfile"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="8dp"
@@ -44,93 +44,87 @@
                     app:tint="#5A3E8B" />
 
                 <TextView
-                    android:id="@+id/textSearchTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Find Volunteer Events"
+                    android:text="User Profile"
                     android:textColor="#3C246B"
                     android:textSize="28sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textSearchSubtitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:lineSpacingExtra="4dp"
-                android:text="Search by zip code and date to find local service opportunities that fit your schedule."
-                android:textColor="#555555"
-                android:textSize="16sp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="22dp"
                 android:background="#FFFFFF"
                 android:elevation="3dp"
                 android:orientation="vertical"
-                android:padding="18dp">
+                android:padding="20dp">
 
                 <TextView
-                    android:id="@+id/textZipLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Enter Zip Code"
-                    android:textColor="#5A3E8B"
-                    android:textSize="16sp"
+                    android:text="Bio"
+                    android:textColor="#7A5DB0"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/editTextZipCode"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:layout_marginTop="12dp"
-                    android:backgroundTint="#7E57C2"
-                    android:ems="10"
-                    android:hint="5-digit zip code"
-                    android:inputType="number"
-                    android:maxLength="5"
-                    android:paddingStart="12dp"
-                    android:paddingEnd="12dp"
-                    android:textColor="#222222"
-                    android:textColorHint="#8A8A8A" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="#FFFFFF"
-                android:elevation="3dp"
-                android:orientation="vertical"
-                android:padding="18dp">
 
                 <TextView
-                    android:id="@+id/textDateLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Select a Date"
-                    android:textColor="#5A3E8B"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <CalendarView
-                    android:id="@+id/calendarView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp" />
+                    android:layout_marginTop="8dp"
+                    android:text="I love to volunteer and help in the community."
+                    android:textColor="#555555"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="Impact"
+                    android:textColor="#7A5DB0"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Hours Worked: 56"
+                    android:textColor="#3C246B"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="You have completed multiple community service events and can now review, search, and export your service record."
+                    android:textColor="#555555"
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <Button
-                android:id="@+id/buttonSubmitSearch"
+                android:id="@+id/buttonMyEvents"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="22dp"
                 android:backgroundTint="#7E57C2"
-                android:text="Submit"
+                android:text="My Events"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonViewTotalHours"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#E8DDFF"
+                android:text="View Total Hours"
+                android:textAllCaps="false"
+                android:textColor="#5A3E8B"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
