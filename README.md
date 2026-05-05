@@ -6,7 +6,7 @@ Created by Yossef Eini and Ramzi Carter
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
-* **Android Studio** (Ladybug | 2024.2.1 or newer recommended)
+* **Android Studio** (2024.2.1 or newer recommended)
 * **Android SDK** (API Level 34 or newer)
 * **Git** installed on your local machine
 
